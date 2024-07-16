@@ -1,11 +1,17 @@
 {
+  "name": "mon_projet_es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint",
-    "check-lint": "./node_modules/.bin/eslint [0-9]*.js",
-    "dev": "babel-node",
+    "lint": "./node_modules/.bin/eslint src/**/*.js",
+    "check-lint": "./node_modules/.bin/eslint src/**/*.js",
+    "dev": "npx babel-node",
     "test": "jest",
-    "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
+    "full-test": "./node_modules/.bin/eslint src/**/*.js && jest"
   },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/node": "^7.8.0",
